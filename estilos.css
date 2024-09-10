@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.header {
+    background: url(IMG/fondo2.png) center/cover no-repeat;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 25px; 
+    filter: none;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo-img {
+    height: 95px; 
+}
+
+.logo {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.header-txt h5 {
+    color: #fff;
+}
+
+.iconos i {
+    font-size: 25px;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.iconos i:hover {
+    color: #FFDB58;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    margin-top: 110px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header-txt p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgb(255, 255, 255);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header-txt h3 {
+    color: #FFFF;
+}
+
+.fa-phone,
+.fa-facebook,
+.fa-whatsapp {
+    color: #000;
+}
+
+.btn-1:hover {
+    background-color: #FFDB58;
+}
+
+.two-columns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 17px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 12px;
+}
+
+.column h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.colonias-list {
+    columns: 3; /* Número de columnas */
+}
+
+.colonias-list li {
+    margin-bottom: 14px;
+}
+
+.ubicacion {
+    margin-bottom: 24px;
+}
+
+.ubicacion iframe {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.images {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    left: 60%;
+    transform: translateY(60%);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide p,
+.swiper-slide h3 {
+    position: absolute;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.swiper-slide p {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.swiper-slide h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 2px;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.ubicacion {
+    position: relative;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+.ubicacion iframe {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.ubicacion p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.rows {
+    width: 180px;
+    position: absolute;
+    right: 620px;
+    bottom: 280px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px;
+    color: #fff;
+}

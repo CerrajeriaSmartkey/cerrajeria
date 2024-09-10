@@ -1,0 +1,338 @@
+/* Consulta de medios para pantallas con un ancho máximo de 1123px */
+@media (max-width: 1123px) {
+    .images {
+        width: 400px; /* Reducir el ancho del carrusel */
+        height: 250px; /* Reducir la altura del carrusel */
+        position: absolute;
+        right: 3%; /* Ajustar la posición a la derecha */
+        left: auto; /* Remover el ajuste del lado izquierdo */
+        transform: translateY(100%); /* Ajustar la posición vertical */
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        height: 40px; /* Reducir el tamaño de los botones de navegación */
+        width: 40px;
+        border: 1px solid #fff; /* Reducir el grosor del borde */
+        font-size: 12px; /* Reducir el tamaño del texto */
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px; /* Reducir el tamaño del icono */
+    }
+}
+
+@media screen and (max-width: 943px) {
+
+    .logo-img {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 55px;
+    }
+
+    .header-txt h1 {
+        margin-top: 90px;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .header-txt h3{
+        font-size: 15px;
+    }
+    .header-txt p {
+        font-size: 18px;
+
+    }
+
+    .images {
+        transform: translateY(70%); /* Ajustar la posición vertical */
+    }
+    
+
+    .two-columns {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 863px) {
+    
+    .header-txt h1 {
+        margin-top: 85px;
+        font-size: 27px;
+        line-height: 37px;
+    }
+
+    .header-txt h3{
+        font-size: 19px;
+    }
+
+    .images {
+        width: 330px; /* Reducir el ancho del carrusel */
+        height: 240px;
+        transform: translateY(70%); /* Ajustar la posición vertical */
+    }
+    .two-columns {
+        flex-direction: column;
+    }
+    
+}
+
+/* Media query para pantallas muy pequeñas (como móviles) */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .logo-img {
+        height: 70px;
+    }
+
+    .logo p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .header-txt h1 {
+        margin-top: 160px;
+        font-size: 40px;
+        text-align: center; /* Centra el eslogan */
+    }
+
+    .header-txt p {
+        font-size: 18px;
+        text-align: center; /* Ajusta y centra el texto de la descripción */
+    }
+
+    .two-columns {
+        flex-direction: column; /* Asegura que las secciones se muestren en renglones */
+        margin-top: 10px;
+    }
+
+    .column {
+        width: 100%; /* Ocupa el ancho completo de la pantalla */
+        margin-bottom: 20px; /* Añade un margen entre las secciones */
+    }
+
+    .column h2 {
+        font-size: 20px;
+    }
+
+    .colonias-list {
+        columns: 3; /* Cambia a 2 columnas en pantallas pequeñas */
+        column-gap: 20px; /* Ajusta el espacio entre las columnas */
+    }
+
+    .swiper-slide p {
+        font-size: 15px; /* Reduce el tamaño del texto dentro del carrusel en móviles */
+    }
+
+    /* Asegura que la descripción y el carrusel no se superpongan */
+    .header-txt {
+        width: 100%;
+        margin-bottom: 30px; /* Espacio suficiente entre la descripción y el carrusel */
+    }
+
+    .images {
+        width: 90%;
+        right: auto;
+        margin: auto; /* Asegura que haya espacio suficiente entre el carrusel y los botones */
+        position: relative; /* Cambia a relative para el flujo normal del documento */
+        transform: translateY(-8%);
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 554px) {
+    /* Asegúrate de que todos los elementos se ajusten al ancho de la pantalla */
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    }
+
+    .header-txt h1 {
+        font-size: 30px;
+        margin-top: 140px;
+    }
+
+    .header-txt h3 {
+        font-size: 15px;
+    }
+
+    .header-txt p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .logo{
+        font-size: 45px;
+    }
+
+    .ubicacion, .colonias-list {
+        width: 100%; /* Asegura que el ancho ocupe el 100% del contenedor */
+        box-sizing: border-box; /* Incluye padding y border en el ancho total */
+        padding: 10px; /* Ajusta el padding para evitar desbordamiento */
+    } 
+
+    .colonias-list {
+        columns: 2; /* Muestra las colonias en una sola columna en pantallas pequeñas */
+        column-gap: 20px; /* Ajusta el espacio entre las columnas */
+        font-size: 16px;
+    }
+
+    .column {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        margin-bottom: 20px; /* Añade margen entre las secciones */
+    }
+
+    /* Asegura que el contenedor de ubicación y colonias no cause desbordamiento */
+    .two-columns {
+        flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+    .header-txt {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        margin-bottom: 20px; /* Añade margen debajo de la descripción */
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .header-txt h1 {
+        font-size: 30px;
+        margin-top: 125px;
+    }
+    .header-txt h3 {
+        font-size: 13px;
+    }
+    .header-txt p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .ubicacion h2 {
+        font-size: 14px;
+    }
+
+    .colonias-list {
+        width: 100%; 
+        columns: 2; 
+        font-size: 12px;
+    }
+    .swiper-slide p {
+        font-size: 12px;
+    }
+    
+    .btn-1{
+        font-size: 14px;
+    }
+     
+}
+
+@media screen and (max-width: 385px) {
+    .logo{
+        font-size: 28px;
+    }
+
+    .header-txt h1 {
+        font-size: 20px;
+        margin-top: 110px;
+        line-height: 27px;
+    }
+    .header-txt h3 {
+        font-size: 11px;
+    }
+    .header-txt p {
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+    .btn-1{
+        font-size: 12px;
+    }
+    .swiper-slide p {
+        font-size: 9px;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+
+.ubicaciones, .colonias-list {
+    width: 100%; 
+    padding: 0;   
+    margin: 0;   
+    overflow-x: hidden; 
+}
+
+.ubicaciones h2, .colonias-list h2 {
+    font-size: 16px;  
+    text-align: center; 
+}
+
+.colonias-list {
+    columns: 1;
+    column-gap: 0;
+}
+
+.colonias-list li {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    word-wrap: break-word; 
+}
+.swiper-slide h3{
+    font-size: 14px;
+}
+    
+}
+
+@media screen and (max-width: 281px) {
+
+    
+    .ubicaciones, .colonias-list {
+        width: 100%; 
+        padding: 0; 
+        margin: 0;   
+        overflow-x: hidden; 
+        overflow-y: auto; 
+    }
+
+   
+    .ubicaciones h2, .colonias-list h2 {
+        font-size: 14px; 
+        text-align: center;
+        margin: 10px 0;
+    }
+
+   
+    .colonias-list {
+        columns: 1; 
+        column-gap: 0; 
+        list-style-type: none; 
+        padding: 0; 
+    }
+
+    .colonias-list li {
+        font-size: 12px;
+        margin-bottom: 8px;
+        word-wrap: break-word; /* Evita que las palabras largas se desborden */
+    }
+
+    
+    .ubicaciones, .colonias-list {
+        padding: 10px; 
+    }
+
+   
+    .contenedor {
+        padding: 0 5px;
+    }
+}
