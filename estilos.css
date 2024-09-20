@@ -154,7 +154,7 @@ body {
 }
 
 .colonias-list {
-    columns: 3; /* Número de columnas */
+    columns: 2; /* Número de columnas */
 }
 
 .colonias-list li {
